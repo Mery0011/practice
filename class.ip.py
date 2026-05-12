@@ -91,3 +91,22 @@ print(dog.voice, fish.voice)
 
 print("dog.status:", dog.status)
 print("cat.status:", cat.status)
+
+print("==== POLIMORPHISM ====")
+
+dog.make_voice()
+cat.make_voice()
+
+print("-----")
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print(f"the result: {result}")
+
+# Fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data1, data2)
