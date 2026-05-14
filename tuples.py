@@ -1,0 +1,30 @@
+''' Tuple
+    (1) What is tuple: tuple vs list
+    (2) Unpacking argument
+    (3) zip
+'''
+
+print("===== What is tuple: tuple vs list =====")
+# Java/PHP/NodeJS array => Python list
+
+# LITERAL
+numbs = [3, 5, 1, 2]
+# car_dict = {"brand": "ferrari", "year": 1995}
+print(numbs)
+
+# CONSTRUCTOR
+letters = list("Hello World!")
+
+fruits = ["apple", "lemon", "banana", "kiwi"]
+print("before fruits:", fruits)
+
+fruits[2] = "melon"
+print("after fruits:", fruits)
+
+
+# we can not mutate tuple
+animals = ("dog", "cat", "fish", "lion")
+tuple_obj = ("MIT", 100, True, None)
+
+print(animals[0])
+# animals[0] = "bird"
